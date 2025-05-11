@@ -1,4 +1,4 @@
-# ts-playwright-bdd
+# typescript-playwright-bdd
 
 # 🧪 Playwright + Cucumber + TypeScript + Node.js Framework
 
