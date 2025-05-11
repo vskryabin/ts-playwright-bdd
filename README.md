@@ -7,7 +7,7 @@ This project is a robust end-to-end test automation framework using:
 - ✅ [Cucumber](https://cucumber.io/) for BDD (Gherkin syntax)
 - ✅ [TypeScript](https://www.typescriptlang.org/) for static typing
 - ✅ [Node.js](https://nodejs.org/) as the runtime
-- ✅ [Visual Studio Code](https://code.visualstudio.com/) for development with Cucumber (Gherkin) extension
+- ✅ [Visual Studio Code](https://code.visualstudio.com/) for development with official Cucumber extension
 
 ---
 
@@ -20,10 +20,10 @@ This project is a robust end-to-end test automation framework using:
 [Download](https://code.visualstudio.com/Download) and install from the official website.
 ```
 After installing, open VSCode and install the official Cucumber extension:
-Go to the Extensions tab (or press Ctrl+Shift+X / Cmd+Shift+X)
+Go to the Settings -> Extensions tab (or press Ctrl+Shift+X / Cmd+Shift+X)
 Search for: Cucumber
 Publisher: Cucumber cucumber.io (Cucmber for Visual Studio Code)
-Install the extension
+Install the extension.
 ```
 
 #### [Node.js](https://nodejs.org/) 
@@ -91,8 +91,8 @@ brew install git
 ### 2. Clone the Repo
 ```
 Open Terminal and create a directory for projects if not exists. (mkdir your-projects-directory)
-Then setup your repository:
 ```
+Then setup your repository:
 ```bash
 cd your-projects-directory
 git clone https://github.com/your-org/your-repo-name.git
