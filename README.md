@@ -63,7 +63,7 @@ git --version
 
 ##### 🍎 macOS
 
-Check if Git is already installed
+Check if Git is already installed:
 ```bash
 git --version
 ```
@@ -98,7 +98,7 @@ Non-BDD tests:
 npx playwright test
 ```
 
-Codegen
+Codegen:
 ```bash
 npx playwright codegen
 ```
