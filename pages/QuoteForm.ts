@@ -27,7 +27,7 @@ export default class QuoteForm {
   }
 
   async navigate(): Promise<void> {
-    await this.page.goto(process.env.QUOTE_BASE_URL!);
+    await this.page.goto(process.env.TEST_QUOTE_BASE_URL!);
   }
 
   async fillUsername(username: string): Promise<void> {

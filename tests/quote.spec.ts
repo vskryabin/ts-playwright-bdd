@@ -11,7 +11,7 @@ dotenv.config();
 test.describe('Quote Form Tests', () => {
   test.beforeEach(async ({ page }) => {
     await page.setViewportSize({ width: 1920, height: 1080 });
-    await page.goto(process.env.QUOTE_BASE_URL!);
+    await page.goto(process.env.TEST_QUOTE_BASE_URL!);
   });
 
   test.afterEach(async ({ page }, testInfo) => {
@@ -30,7 +30,7 @@ test.describe('Quote Form Tests', () => {
   });
 
   test('should fill out and verify required fields', async ({ page }) => {
-    await page.goto('https://skryabin.com/market/quote.html');
+    await page.goto(process.env.TEST_QUOTE_BASE_URL!);
     await page.locator('input[name="username"]').click();
     await page.locator('input[name="username"]').fill(process.env.TEST_USERNAME!);
     await page.locator('input[name="email"]').fill(process.env.TEST_EMAIL!);
@@ -43,7 +43,7 @@ test.describe('Quote Form Tests', () => {
     await page.locator('text=Save').click();
     await page.locator('input[name="agreedToPrivacyPolicy"]').check();
     await page.locator('#formSubmit').click();
-    // await page.waitForTimeout(2000);
+    await page.waitForTimeout(2000);
     const resultContainer = await page.locator('#quotePageResult');
     await expect(resultContainer).toBeVisible();
     await expect(resultContainer.locator('b[name="username"]')).toHaveText(process.env.TEST_USERNAME!);

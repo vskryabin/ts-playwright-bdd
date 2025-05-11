@@ -46,7 +46,7 @@ export default defineConfig({
     ['json', { outputFile: 'test-results/index.json' }]
   ],
   use: {
-    baseURL: process.env.QUOTE_BASE_URL,
+    baseURL: process.env.TEST_QUOTE_BASE_URL,
     actionTimeout: 0,
     trace: 'retain-on-failure',
     headless: process.env.HEADLESS === 'true',
