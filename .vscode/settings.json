@@ -1,0 +1,20 @@
+{
+  // Tells the extension where your .feature files live
+  "cucumber.features": [
+    "features/**/*.feature"
+  ],
+
+  // Tells it where to find your JS step definitions
+  "cucumber.glue": [
+    "steps/**/*.ts"
+  ]
+
+  // (Optional) if you have custom parameter types, you can also add:
+  // "cucumber.parameterTypes": [ { "name": "actor", "regexp": "[A-Z][a-z]+" } ]
+}
+// {
+//   "cucumberautocomplete.steps": [
+//       "steps/**/*.ts"
+//   ],
+//   "cucumberautocomplete.strictGherkinCompletion": true
+// }
